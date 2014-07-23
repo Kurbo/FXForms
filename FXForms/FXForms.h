@@ -54,6 +54,7 @@ static NSString *const FXFormFieldFooter = @"footer";
 static NSString *const FXFormFieldInline = @"inline";
 static NSString *const FXFormFieldSortable = @"sortable";
 static NSString *const FXFormFieldViewController = @"viewController";
+static NSString *const FXFormFieldRequired = @"required";
 
 static NSString *const FXFormFieldTypeDefault = @"default";
 static NSString *const FXFormFieldTypeLabel = @"label";
@@ -114,6 +115,7 @@ static NSString *const FXFormFieldTypeImage = @"image";
 @property (nonatomic, readonly) NSDictionary *fieldTemplate;
 @property (nonatomic, readonly) BOOL isSortable;
 @property (nonatomic, readonly) BOOL isInline;
+@property (nonatomic, readwrite, getter = isRequired) BOOL required;
 @property (nonatomic, readonly) Class valueClass;
 @property (nonatomic, readonly) Class viewController;
 @property (nonatomic, readonly) void (^action)(id sender);
