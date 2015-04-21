@@ -59,6 +59,7 @@ NSString *const FXFormFieldFooter = @"footer";
 NSString *const FXFormFieldInline = @"inline";
 NSString *const FXFormFieldSortable = @"sortable";
 NSString *const FXFormFieldViewController = @"viewController";
+NSString *const FXFormFieldRequired = @"required";
 
 NSString *const FXFormFieldTypeDefault = @"default";
 NSString *const FXFormFieldTypeLabel = @"label";
