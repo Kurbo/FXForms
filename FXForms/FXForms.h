@@ -75,7 +75,7 @@ UIKIT_EXTERN NSString *const FXFormFieldTypeDate; //date
 UIKIT_EXTERN NSString *const FXFormFieldTypeTime; //time
 UIKIT_EXTERN NSString *const FXFormFieldTypeDateTime; //datetime
 UIKIT_EXTERN NSString *const FXFormFieldTypeImage; //image
-
+UIKIT_EXTERN NSString *const FXFormFieldTypeReadOnly; //read-only
 
 #pragma mark -
 #pragma mark Models
