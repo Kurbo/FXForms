@@ -80,7 +80,7 @@ NSString *const FXFormFieldTypeDate = @"date";
 NSString *const FXFormFieldTypeTime = @"time";
 NSString *const FXFormFieldTypeDateTime = @"datetime";
 NSString *const FXFormFieldTypeImage = @"image";
-
+NSString *const FXFormFieldTypeReadOnly = @"read_only";
 
 static NSString *const FXFormsException = @"FXFormsException";
 
@@ -2870,7 +2870,10 @@ static void FXFormPreprocessFieldDictionary(NSMutableDictionary *dictionary)
     }
     else
     {
-        [super setValue:value forKeyPath:keyPath];
+         if ([keyPath isEqualToString:FXFormFieldTypeReadOnly])
+          self.textField.userInteractionEnabled = ![value boolValue];
+        else
+          [super setValue:value forKeyPath:keyPath];
     }
 }
 
